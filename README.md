@@ -1,5 +1,11 @@
 # Homework_1
 
+Completed upto level 18 in Bandit wargames according to the instruction given in following site. 
+The screenshots illustrate the commands used to discover the password.
+
+[OverTheWire website][1]
+[1]: http://overthewire.org/wargames/bandit/
+
 ![level1](https://cloud.githubusercontent.com/assets/18345099/14379173/67da2e8c-fd96-11e5-9095-f0c0db240e52.PNG)
 ![level2](https://cloud.githubusercontent.com/assets/18345099/14379172/67d9d360-fd96-11e5-99f1-78743bb4a49c.PNG)
 ![level3](https://cloud.githubusercontent.com/assets/18345099/14379174/67f8ba78-fd96-11e5-8851-da5313161e4a.PNG)
