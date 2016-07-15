@@ -9,9 +9,13 @@ The screenshots illustrate the commands used to discover the password.
 bandit0
 
 Level Goal:
+
 Connect to the OverTheWire game server using SSH using provided credentials and discover password for Level 1. hostname: bandit.labs.overthewire.org username: bandit0 password: bandit0
+
 How To:
+
 Use an SSH application and SSH to bandit0@bandit.labs.overthewire.org. Given that the file is in the home directory, use lscommand to list the content of the directory.Notice the file named readme, and simply read this filename to find the password for the next level using the command cat readme.
+
 Terminate the SSH session by typing exit and reconnect to the bandit game using thenew username and password for level 1.
 
 ![level1](https://cloud.githubusercontent.com/assets/18345099/14379173/67da2e8c-fd96-11e5-9095-f0c0db240e52.PNG)
@@ -19,8 +23,11 @@ Terminate the SSH session by typing exit and reconnect to the bandit game using 
 bandit1
 
 Level Goal:
+
 Discover password for the next level stored in a file called - located in the home directory.
+
 How To:
+
 Login as bandit1 using the password recovered from level0 and land in the home directory. Given that the file is in the home directory named -, the command cat ./- produces the intended result. The period denotes the current working directory which in this case can be substituted with /home/bandit1.
 
 ![level2](https://cloud.githubusercontent.com/assets/18345099/14379172/67d9d360-fd96-11e5-99f1-78743bb4a49c.PNG)
@@ -28,8 +35,11 @@ Login as bandit1 using the password recovered from level0 and land in the home d
 bandit2
 
 Level Goal:
+
 Discover password for the next level stored in a file called "spaces in this filename" located in the home directory.
+
 How To:
+
 Given that the file is in the home directory named again the command cat should produce results. The file can is read using the command cat spaces\ in\ this\ filename in which the backslash preserves the space following it or simply type cat sp and hit Tab for the shell to fill the rest.
 Terminate the SSH session and login to next level.
 
@@ -38,8 +48,11 @@ Terminate the SSH session and login to next level.
 bandit3
 
 Level Goal:
+
 Discover password for the next level stored in a hidden file in a directory named "inhere".
+
 How To:
+
 Try to list all what inhere directory holds with the ls command and it would show it as blank. Go through the manual of for ls command by typing in man ls and notice the argument -a used to list all items. Press q and exit. Then use the command with the argument to list literally all items. This should show three things listed. A period, two periods and .hidden. The period denotes the current directory, two periods references the parent directory and .hidden is the hidden file containing the password for the next level.
 Read the file using cat /inhere/.hidden from the home directory to recover the password.
 Terminate the SSH session and login to next level.
@@ -50,8 +63,11 @@ Terminate the SSH session and login to next level.
 bandit4
 
 Level Goal:
+
 Discover password for the next level stored in the only human-readable file in the directory named "inhere".
+
 How To:
+
 List all the items in the folder and notice the file names beginning with a dash meaning that we should adjust the command. Given that there is only one human-readable file in the directory, using wildcard type in the command file ./* to identify the file with ASCII characters. This should show the only human-readable file as -file07.
 Read the password, terminate the SSH session and login to next level.
 
